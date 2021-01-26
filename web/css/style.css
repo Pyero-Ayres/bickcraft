@@ -199,6 +199,10 @@ img {
 
 .produtos_lista li {
     background: #fec63e;
+}
+
+.produtos_lista li img {
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -206,6 +210,7 @@ img {
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: .1em;
     margin-top: 20px;
@@ -294,7 +299,6 @@ img {
 
 .qualidade_lista {
     padding-top: 20px;
-    overflow: auto;
 }
 
 .qualidade_lista li h3 {
