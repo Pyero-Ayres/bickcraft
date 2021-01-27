@@ -25,3 +25,7 @@
 .foto_equipe {
     padding-top: 20px;
 }
+
+.qualidade_lista {
+    overflow: auto;
+}
