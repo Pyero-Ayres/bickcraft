@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Bickcraft - Produtos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -10,7 +11,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/produtos.css">
     <link rel="stylesheet" href="css/responsivo.css">
-    <title>Bickcraft - Produtos</title>
+    <script>
+        document.documentElement.classList.add("js");
+    </script>
 </head>
 
 <body>
@@ -40,11 +43,11 @@
     <!--FECHA MENU-->
     <section class="introducao_interna interna_produtos">
         <div class="container">
-            <h1>produtos</h1>
-            <p>conheça todos os nossos produtos.</p>
+            <h1 class="fadeInDown" data-anime="400">produtos</h1>
+            <p class="fadeInDown" data-anime="800">conheça todos os nossos produtos.</p>
         </div>
     </section>
-    <section class="container produtos_item">
+    <section class="container produtos_item fadeInDown" data-anime="1200">
         <div class="grid-11">
             <img src="img/produtos/bickcraft-passeio-1.jpg" alt="Foto de duas mulheres andando de bicicleta.">
             <h2>Passeio</h2>
@@ -188,6 +191,8 @@
             </div>
         </div>
     </footer>
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

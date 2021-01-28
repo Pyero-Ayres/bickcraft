@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Bickcraft - Sobre</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -10,7 +11,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/responsivo.css">
-    <title>Bickcraft - Sobre</title>
+    <script>
+        document.documentElement.classList.add("js");
+    </script>
 </head>
 
 <body>
@@ -40,12 +43,12 @@
     <!--FECHA MENU-->
     <section class="introducao_interna interna_sobre">
         <div class="container">
-            <h1>sobre</h1>
-            <p>conheça mais sobre a bikcraft.</p>
+            <h1 class="fade-InDown" data-anime="400">sobre</h1>
+            <p class="fade-InDown" data-anime="800">conheça mais sobre a bikcraft.</p>
         </div>
     </section>
     <!--FECHA INTRODUÇÃO INTERNA-->
-    <section class="missao_sobre container">
+    <section class="missao_sobre container fade-InDown" data-anime="1200">
         <div class="grid-10">
             <h2 class="subtitulo_interno">História, Missão e Visão</h2>
             <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse os detalhes da vida cotidiana.interesse por todos os detalhes da vida cotidiana.</p>
@@ -128,6 +131,8 @@
             </div>
         </div>
     </footer>
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
