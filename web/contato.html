@@ -49,16 +49,22 @@
     </section>
     <!--FECHA INTRODUÇÃO-->
     <section class="contato container fadeInDown" data-anime="1200">
-        <form class="grid-8 contato_form" id="form_orcamento">
+        <form method="POST" action="./enviar.php" class="grid-8 contato_form formphp" id="form_orcamento">
             <label for="nome">Nome</label>
-            <input type="text" id="nome">
+            <input type="text" id="nome" name="nome" required>
             <label for="email">E-mail</label>
-            <input type="text" id="email">
+            <input type="email" id="email" name="email" required>
             <label for="telefone">Telefone</label>
-            <input type="text" id="telefone">
-            <label for="espec">Especificações</label>
-            <textarea id="espec"></textarea>
-            <button class="btn btn_preto" type="submit">Enviar</button>
+            <input type="text" id="telefone" name="telefone">
+            <!--ENGANA ROBÔ -->
+            <label class="nao_aparece">Se você não é um robô, deixe em branco.</label>
+            <input type="text" class="nao_aparece" name="leaveblank">
+            <label class="nao_aparece">Se você não é um robô, não mude este campo.</label>
+            <input type="text" class="nao_aparece" name="dontchange" value="http://">
+            <!--FECHA ENGANA ROBÔ -->
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button id="enviar" name="enviar" class="btn btn_preto" type="submit">Enviar</button>
         </form>
         <div class="grid-8 contato_dados">
             <h3>Dados</h3>
@@ -132,6 +138,7 @@
         </div>
     </footer>
     <script src="./js/simple-anime.js"></script>
+    <script src="./js/simple-form.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
